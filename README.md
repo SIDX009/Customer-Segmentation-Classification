@@ -1,42 +1,28 @@
-#Customer-Segmentation-Classification
-This project centers around developing a Customer Segmentation Classification model for an automobile company planning market expansion. The aim is to predict customer segments (A, B, C, D) in new markets based on existing market behaviors. Challenges include handling missing data, exploring complex customer behaviors, and optimizing model performance.
+Customer Segmentation Classification Project
+Overview:
+This project focuses on developing and implementing a Customer Segmentation Classification model for an automobile company planning market expansion. The objective is to predict customer segments (A, B, C, D) in new markets based on existing market behaviors, tackling challenges like missing data, complex customer behaviors, and model optimization.
 
-#Objective:
-Predict customer segments (A, B, C, D) for the automobile company's products in new markets using machine learning techniques, leveraging characteristics and behaviors.
+Key Objectives:
+Prediction of Customer Segments: Utilize machine learning techniques to predict customer segments (A, B, C, D) for the automobile company's products in new markets.
+Data Challenges: Address missing data in key features and explore complex customer behaviors.
+Model Optimization: Optimize the performance of the classification model for accurate predictions.
+Dataset & Features:
+The dataset includes information on customers in the existing market, including age, gender, marital status, education, profession, work experience, family size, spending score, and de-identified categories (Var_1).
 
-#Challenges:
-Missing Data: Addressing missing values in key features.
-Behavioral Complexity: Analyzing intricate customer behaviors, including age, work experience, family size, spending score, and categorical features.
-Model Optimization: Enhancing the classification model's performance for accurate predictions across customer segments.
-Dataset & Data Fields:
-The dataset contains customer information in the existing market, including age, gender, marital status, education, profession, work experience, family size, spending score, and de-identified categories. The goal is to train a model for predicting customer segments in new markets.
+Techniques and Tools Used:
+Data analysis and preprocessing using pandas and Numpy.
+Data visualization with Seaborn and Matplotlib.
+Handling missing data and outliers.
+Feature engineering to create new features.
+Data encoding for categorical features.
+Machine learning models include Gradient Boosting, SVM, KNN, Decision Tree, Naive Bayes, and Random Forest.
+Hyperparameter tuning with RandomizedSearchCV.
+Evaluation metrics such as accuracy and classification reports.
+Power BI Dashboard:
+The project includes a Power BI dashboard for comprehensive visualization and exploration of key insights.
+Conclusion:
+The Gradient Boosting Classifier emerged as the best-performing model with an accuracy of 0.53, making it the recommended choice for predicting customer segments in new markets. Among the segments, Segment D (Class 3) demonstrated the highest F1-Score, signifying it as the best-performing segment.
 
-#Libraries Used:
-pandas: Data manipulation and analysis.
-numpy: Mathematical operations.
-seaborn: Data visualization.
-matplotlib.pyplot: Plotting graphs.
+For more detailed insights, explore the Power BI dashboard provided.
 
-#Key Steps:
-Data Loading and Preprocessing: Handled missing values, dropped irrelevant columns, and imputed values for key features.
-Exploratory Data Analysis (EDA): Explored data through visualizations, analyzed distributions, and relationships between features.
-Data Visualization: Plotted violin and count plots to visualize feature distributions and correlations with segmentation.
-Feature Engineering: Created new features based on counts of 'Profession' and 'Var_1' values.
-Data Encoding: Ordinally encoded 'Spending_Score' and mapped categorical features.
-Label Encoding: Encoded the target variable 'Segmentation' using LabelEncoder.
-Data Splitting: Split the dataset into training and testing sets.
-Feature Scaling: Applied standardization using StandardScaler on numerical features.
-
-#Model Evaluation:
-Evaluated various classifiers (Gradient Boosting, SVM, KNN, Decision Tree, Naive Bayes, Random Forest) using default settings and hyperparameter tuning. Gradient Boosting outperformed others, achieving an accuracy of 0.53.
-
-#Conclusion:
-The Gradient Boosting Classifier is recommended for predicting customer segments in new markets, showcasing the highest accuracy and overall better performance. The best-performing segment is identified as Class 3 (Segment D) based on F1-Score.
-
-#Best Practices:
-Proper handling of missing data.
-Thorough exploratory data analysis for insights.
-Feature engineering for enhanced model performance.
-Evaluation and comparison of multiple classifiers.
-
-#Note: For detailed code and insights, refer to the Jupyter Notebook in the repository.
+Note: Refer to the Jupyter Notebook in the repository for detailed code and insights.
